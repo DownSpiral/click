@@ -4,6 +4,9 @@ using System.Collections;
 
 public class Counter : MonoBehaviour {
 
+	void Start() {
+		setCounterText();
+	}
 	public Text counterText;
 	// Use this for initialization
 	public void incrementCounter () {

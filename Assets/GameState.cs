@@ -7,9 +7,9 @@ public class GameState : MonoBehaviour {
 	void Start() {
 		if (state == null) {
 			state = this;
-			GameObject.DontDestroyOnLoad(GameObject);
+			GameObject.DontDestroyOnLoad(gameObject);
 		} else {
-			Destroy(GameObject);
+			Destroy(gameObject);
 			Debug.Log("Destroying duplicate GameState object");
 		}
 	}
