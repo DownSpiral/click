@@ -4,7 +4,7 @@ using System.Collections;
 public class GameState : MonoBehaviour {
 	public static GameState state;
 
-	void Start() {
+	void Awake() {
 		if (state == null) {
 			state = this;
 			GameObject.DontDestroyOnLoad(gameObject);
